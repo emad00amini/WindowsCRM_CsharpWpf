@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5B8E044-C89F-412D-B00A-9B3D31B5FFDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CRM</RootNamespace>
+    <AssemblyName>CRM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FoxLearn.License">
+      <HintPath>..\..\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="HandyControl, Version=3.3.0.0, Culture=neutral, PublicKeyToken=45be8712787a1e5b, processorArchitecture=MSIL">
+      <HintPath>packages\HandyControls.3.4.2\lib\net472\HandyControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2022.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2022.1.1\Designers\.NET\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2022.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2022.1.1\Designers\.NET\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ActivityClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivityClick.Designer.cs">
+      <DependentUpon>ActivityClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customersClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customersClick.Designer.cs">
+      <DependentUpon>customersClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FactorClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactorClick.Designer.cs">
+      <DependentUpon>FactorClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loginUserUC.Designer.cs">
+      <DependentUpon>loginUserUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="registerAdmin.Designer.cs">
+      <DependentUpon>registerAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settingClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settingClick.Designer.cs">
+      <DependentUpon>settingClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userClick.Designer.cs">
+      <DependentUpon>userClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsClick.Designer.cs">
+      <DependentUpon>ProductsClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmClick.Designer.cs">
+      <DependentUpon>AlarmClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="smsClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="smsClick.Designer.cs">
+      <DependentUpon>smsClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="ActivityClick.resx">
+      <DependentUpon>ActivityClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customersClick.resx">
+      <DependentUpon>customersClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactorClick.resx">
+      <DependentUpon>FactorClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginUserUC.resx">
+      <DependentUpon>loginUserUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsClick.resx">
+      <DependentUpon>ProductsClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmClick.resx">
+      <DependentUpon>AlarmClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerAdmin.resx">
+      <DependentUpon>registerAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingClick.resx">
+      <DependentUpon>settingClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="smsClick.resx">
+      <DependentUpon>smsClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userClick.resx">
+      <DependentUpon>userClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="database1DataSet.xsc">
+      <DependentUpon>database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="database1DataSet.xss">
+      <DependentUpon>database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\icons8-mega-sales-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\icons8-activity-feed-50.png" />
+    <Resource Include="icons\icons8-add-properies-50.png" />
+    <Resource Include="icons\icons8-customers-64 %281%29.png" />
+    <Resource Include="icons\icons8-gear-50.png" />
+    <Resource Include="icons\icons8-graph-report-script-50.png" />
+    <Resource Include="icons\icons8-group-message-50.png" />
+    <Resource Include="icons\icons8-list-view-50.png" />
+    <Resource Include="icons\icons8-retro-alarm-clock-24.png" />
+    <Resource Include="icons\icons8-sell-sign-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-arrow-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-math-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE_CRM\BE_CRM.csproj">
+      <Project>{af4577dc-912d-4984-9774-8961fb644ef1}</Project>
+      <Name>BE_CRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL_CRM\BLL_CRM.csproj">
+      <Project>{4431d9f5-888c-42ea-a9cd-2cb24b67913e}</Project>
+      <Name>BLL_CRM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

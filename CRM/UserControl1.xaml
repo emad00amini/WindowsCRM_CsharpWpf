@@ -1,0 +1,15 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRM"
+             xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="CRM.UserControl1"
+             mc:Ignorable="d" 
+             d:DesignHeight="35" d:DesignWidth="287">
+    <Grid>
+        <TextBlock Name="clock" FontSize="20" Text="fdd" Foreground="Aqua" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <hc:AnimationPath Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="35" Margin="-173,-59,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</UserControl>

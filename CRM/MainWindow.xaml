@@ -1,0 +1,132 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRM"
+        xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="CRM.MainWindow"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+Background="Transparent"
+        
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="720" Width="1280"  x:Name="main">
+    <Border BorderThickness="5" BorderBrush="#1b998b" CornerRadius="10" >
+        <Grid Background="#1b998b">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Border Grid.ColumnSpan="12" Grid.RowSpan="2" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="10" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a" RenderTransformOrigin="0.5,0.5">
+
+                </Rectangle>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" Cursor="Hand"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="6" Grid.RowSpan="7" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="3" Grid.RowSpan="6" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="11" Grid.ColumnSpan="3" Grid.RowSpan="3" CornerRadius="10" Margin="10" BorderThickness="5" BorderBrush="#f9844a">
+                <Rectangle Fill="#f9844a"/>
+            </Border>
+            <hc:SearchBar  Grid.ColumnSpan="2" Height="30"    Grid.RowSpan="2"  Grid.Column="1"/>
+            <hc:PersianCalendar Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="3" Grid.RowSpan="6"/>
+            <local:UserControl1 Grid.Column="6" Grid.Row="11" Grid.ColumnSpan="3"/>
+
+
+
+            <Image Source="/icons/icons8-sell-sign-64.png" Grid.Column="5" Grid.Row="3" Margin="0,0,30,0"/>
+            <TextBlock Text="مشتریان"   FontSize="30" Margin="70,-30,0,0"  Grid.Column="6" Grid.Row="3"  Grid.ColumnSpan="3"/>
+            <TextBlock Text="فروش امروز"   FontSize="30" Margin="70,-30,0,0"  Grid.Column="3" Grid.Row="3"  Grid.ColumnSpan="3"/>
+            <Image Source="/icons/customers.png" Grid.Column="8" Grid.Row="3" Margin="0,0,0,0"/>
+
+            <TextBlock Text="فروش امروز"   FontSize="30" Margin="70,-30,0,0"  Grid.Column="3" Grid.Row="3"  Grid.ColumnSpan="3"/>
+            <Image Source="/icons/customers.png" Grid.Column="8" Grid.Row="3" Margin="0,0,0,0"/>
+
+            <TextBlock Text="یادآور های امروز"   FontSize="30" Margin="70,-30,0,0"  Grid.Column="0" Grid.Row="3"  Grid.ColumnSpan="3"/>
+            <Image Source="/icons/icons8-retro-alarm-clock-24.png" Grid.Column="2" Grid.Row="3" Margin="0,18,0,0"/>
+
+            <Image Source="/icons/user.png" Grid.Column="0" Margin="65,14,10.4,15.8" Grid.RowSpan="2"  MouseLeftButtonDown="user_MouseLeftButtonDown"/>
+
+
+
+
+
+            <WrapPanel  Grid.Row="2" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text="مدیریت مشتری"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-customers-64 (1).png" Width="35" Margin="0,0,0,0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="3" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock
+                    Text="مدیریت کالا ها"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="product_MouseLeftButtonDown" />
+                <Image Source="/icons/icons8-add-properies-50.png" Width="35" Margin="10,0,0,0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="4" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text="لیست فاکتور ها"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="factor_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-list-view-50.png" Width="35" Margin="0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="5" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text=" فعالیت ها"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="activity_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-activity-feed-50.png" Width="35" Margin="0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="6" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text=" یادآور ها"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="reminder_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-retro-alarm-clock-24.png" Width="35" Margin="0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="7" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text=" پنل پیامکی"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-group-message-50.png" Width="35" Margin="0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="8" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text="گزارشات"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-graph-report-script-50.png" Width="35" Margin="0"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+                <TextBlock Text="تنظیمات برنامه"  Style="{StaticResource txtmenu}" MouseLeftButtonDown="setting_MouseLeftButtonDown"/>
+                <Image Source="/icons/icons8-gear-50.png" Width="35" Margin="0"/>
+            </WrapPanel>
+        </Grid>
+
+    </Border>
+</Window>

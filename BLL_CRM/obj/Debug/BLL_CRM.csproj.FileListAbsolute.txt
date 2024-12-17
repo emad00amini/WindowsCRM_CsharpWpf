@@ -1,0 +1,14 @@
+D:\visual\CRM\BLL_CRM\bin\Debug\BLL_CRM.dll
+D:\visual\CRM\BLL_CRM\bin\Debug\BLL_CRM.pdb
+D:\visual\CRM\BLL_CRM\bin\Debug\BE_CRM.dll
+D:\visual\CRM\BLL_CRM\bin\Debug\DAL_CRM.dll
+D:\visual\CRM\BLL_CRM\bin\Debug\EntityFramework.dll
+D:\visual\CRM\BLL_CRM\bin\Debug\BE_CRM.pdb
+D:\visual\CRM\BLL_CRM\bin\Debug\DAL_CRM.pdb
+D:\visual\CRM\BLL_CRM\bin\Debug\DAL_CRM.dll.config
+D:\visual\CRM\BLL_CRM\bin\Debug\EntityFramework.xml
+D:\visual\CRM\BLL_CRM\obj\Debug\BLL_CRM.csproj.AssemblyReference.cache
+D:\visual\CRM\BLL_CRM\obj\Debug\BLL_CRM.csproj.CoreCompileInputs.cache
+D:\visual\CRM\BLL_CRM\obj\Debug\BLL_CRM.csproj.CopyComplete
+D:\visual\CRM\BLL_CRM\obj\Debug\BLL_CRM.dll
+D:\visual\CRM\BLL_CRM\obj\Debug\BLL_CRM.pdb
