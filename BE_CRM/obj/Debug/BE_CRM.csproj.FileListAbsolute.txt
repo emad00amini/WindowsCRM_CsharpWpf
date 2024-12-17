@@ -1,0 +1,6 @@
+D:\visual\CRM\BE_CRM\bin\Debug\BE_CRM.dll
+D:\visual\CRM\BE_CRM\bin\Debug\BE_CRM.pdb
+D:\visual\CRM\BE_CRM\obj\Debug\BE_CRM.csproj.AssemblyReference.cache
+D:\visual\CRM\BE_CRM\obj\Debug\BE_CRM.csproj.CoreCompileInputs.cache
+D:\visual\CRM\BE_CRM\obj\Debug\BE_CRM.dll
+D:\visual\CRM\BE_CRM\obj\Debug\BE_CRM.pdb

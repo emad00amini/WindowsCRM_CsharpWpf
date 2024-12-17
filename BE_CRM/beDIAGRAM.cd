@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BE_CRM.user">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAQAAAAAAAAgAAIAAAAAAAAAAAAEAAAAAAAAAgEAAoA=</HashCode>
+      <FileName>user.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="reminders" />
+      <Property Name="invoices" />
+      <Property Name="activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE_CRM.reminder">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAQQAAgAAAAAAAAAAAAQAAAAAAAAACAAAAAAwA=</HashCode>
+      <FileName>reminder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BE_CRM.product">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAQAAAAAAAAAAAAAAAAAAAEAIAAAAAAAAAAAgA=</HashCode>
+      <FileName>product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="invoices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE_CRM.invoice">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACARAAAAAAAAAAACAAIAAgAAAAAAAAAABAAAAwA=</HashCode>
+      <FileName>invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+      <Property Name="user" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="products" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE_CRM.customer">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAACAQAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="invoices" />
+      <Property Name="activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE_CRM.activityCategory">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>activityCategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE_CRM.activity">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAERQAAgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAwA=</HashCode>
+      <FileName>activity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+      <Property Name="activityCategory" />
+      <Property Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
